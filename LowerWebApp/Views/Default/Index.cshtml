@@ -1,0 +1,21 @@
+﻿@*@model IQueryable<LowerWebApp.Domain.Entities.Reference>
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @foreach (var r in Model)
+        {
+            <div>
+                <span>@r.Lable</span> <span>@r.EN_name</span> <span>@r.Ru_name</span>
+            </div>
+        }
+    </div>
+</body>
+</html>*@

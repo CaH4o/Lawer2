@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище Lawer_DBModelContainer" CdmEntityContainer="Lawer_DBEntities1">
+    <EntitySetMapping Name="References">
+      <EntityTypeMapping TypeName="Lawer_DBModel.Reference">
+        <MappingFragment StoreEntitySet="Reference">
+          <ScalarProperty Name="Lable" ColumnName="Lable" />
+          <ScalarProperty Name="EN_name" ColumnName="EN_name" />
+          <ScalarProperty Name="Ru_name" ColumnName="Ru_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

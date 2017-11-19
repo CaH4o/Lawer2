@@ -1,0 +1,53 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lower - Admin</title>
+    <link rel="stylesheet" href="/css/styles-admin.css?v=1.0">
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" title="Перейти на сайт" href="@Url.Action("Index", "Default")">Prosto</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#auth">Вход <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#roles">Роли</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#users">Пользователи</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#dep">Отделы</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="auth" class="container active" src="@Url.Content("~/pages/admin/auth.htm")"></section>
+    <section id="roles" class="container" src="@Url.Content("~/pages/admin/roles.htm")"></section>
+    <section id="users" class="container" src="@Url.Content("~/pages/admin/users.htm")"></section>
+    <section id="dep" class="container" src="@Url.Content("~/pages/admin/dep.htm")"></section>
+    <!-- Scripts -->
+    <script src="@Url.Content("~/Scripts/jquery/jquery-3.2.1.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/bootstrap/bootstrap.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/hogan/hogan-3.0.2.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery/jquery-hashchange.js")"></script>
+    <script src="@Url.Content("~/Scripts/app-admin.js")"></script>
+    <script src="@Url.Content("~/Scripts/custom-admin.js")"></script>
+</body>
+</html>
