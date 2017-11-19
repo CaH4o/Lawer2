@@ -61,6 +61,7 @@
     <Compile Include="Abstract\IReferenceRepository.cs" />
     <Compile Include="Concrete\EFDbContext.cs" />
     <Compile Include="Concrete\EFReferencesRepository.cs" />
+    <Compile Include="Entities\Employee.cs" />
     <Compile Include="Entities\Reference.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

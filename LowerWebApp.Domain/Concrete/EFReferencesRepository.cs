@@ -16,5 +16,10 @@ namespace LowerWebApp.Domain.Concrete
         {
             get { return context.References; }
         }
+
+        public IQueryable<Employee> Employees
+        {
+            get { return context.Employees; }
+        }
     }
 }

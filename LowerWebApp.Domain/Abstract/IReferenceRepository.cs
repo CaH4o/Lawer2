@@ -10,5 +10,6 @@ namespace LowerWebApp.Domain.Abstract
     public interface IReferenceRepository
     {
         IQueryable<Reference> References { get; }
+        IQueryable<Employee> Employees { get; }
     }
 }

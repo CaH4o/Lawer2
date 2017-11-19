@@ -15,5 +15,6 @@ namespace LowerWebApp.Domain.Concrete
             var instance = System.Data.Entity.SqlServer.SqlProviderServices.Instance;
         }
         public DbSet<Reference> References { get; set; }
+        public DbSet<Employee> Employees { get; set; }
     }
 }
